@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700;800&display=swap');
+*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Raleway', sans-serif; scroll-behavior: smooth; }
+header{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 100%;
+    box-shadow: 0 0 4px rgb(133, 60, 165);
+    background-color: rgb(249, 252, 255);
+    position:fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.menu{
+ width: 40%;
+ display: flex;
+ justify-content: space-between;
+} 
+.menu i{
+    display: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.an:hover{
+    color: rgb(56, 69, 247);
+    transition: all .2s ease-in-out;
+}
+/* Responsive Nav-bar */
+.res-nav{
+    width: 0;
+    height: 94vh;
+    background-color: rgb(244, 248, 248);
+    position: absolute;
+   display: flex;
+   justify-content: start;
+   align-items:center;
+   flex-direction: column;
+   z-index: 999;
+   margin-top: 3rem;
+   transition: all .2s ease ;
+   position: fixed;
+}
+.res-nav a:nth-child(1){
+    margin-top: 5rem;
+}
+.res-nav a{
+    color: black;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: none;
+}
+.res-nav a:hover{
+    color: blue;
+    transition: all .3s;
+}
+.title-para{
+    font-size: 11px;
+}
+h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Hero Section */
+
+.hero{
+    padding: 2rem .5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+.left-block{
+    width: 40%;
+}
+h1{
+    font-size: 2.7rem;
+    line-height: 1.2;
+    
+}
+.span-word{
+    margin-bottom: 30px;
+}
+span{
+    color: rgb(53, 189, 8);
+}
+h6{
+    font-size: 14px ;
+    text-align: center;
+    text-transform: capitalize;
+    display: none;
+    font-weight: 600;
+}
+.right-block{
+    height: 80%;
+    width: 30%;
+
+}
+ .img{
+   width: 100%;
+   height: 100%;
+
+}
+.brows-btn{
+    background: rgb(71, 109, 246);
+    color: azure;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.main-heading{
+    background-color: rgb(229, 231, 233);
+    padding: 1rem;
+    text-align: center;
+}
+h3{
+   font-size: 1.5rem;
+   color:rgb(24, 85, 251) ;
+}
+main{
+    width:100%;
+    height: 100%;
+}
+.product{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+.product img{
+    width: 100%;
+}
+.python,.sql{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   width:20%;
+}
+.java,.cpp,.dsa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:20%;
+}
+.dbms,.js{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:20%;
+}
+p{
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.product-para{
+    margin-top: 10px;
+}
+
+h5{
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(4, 36, 116);
+    margin-top: 2rem;
+
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+.first-colunm,.third-colunm{
+   width: 50%;
+    
+}
+.second-colunm{
+    width: 50%;
+}
+.second-colunm img{
+    width: 100%;
+    padding: 5rem 6rem;
+}
+.adv-title{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.adv2{
+    text-align: justify;
+}
+.adv-para{
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.developer{
+    background-color: black;
+    padding: 1rem;
+}
+.sd{
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .6px;
+}
+.ftr{
+    padding: 2rem;
+}
+.contact{
+    text-align: center;
+    font-size: 1.8rem;
+    color: black;
+}
+.name{
+    margin-top: 5rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.clg{
+    font-weight: 500;
+    line-height: 2;
+}
+.email{
+    font-weight: 500;
+}
+.scroll-up{
+    background-color: rgb(30, 82, 250);
+    padding: 7px;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: 19rem;
+    font-size: 20px;
+    display: none;
+    animation: blink 1.5s infinite;
+}
+@keyframes blink{
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: transparent;
+    }
+    100%{
+        color: #fff;
+    }
+}
+
+/* Tabs css */
+.tabs{
+    display: none;
+}
+.product1-img{
+    padding: 4rem;
+    width: 50%;
+    height: 100%;
+    
+}
+.product1-img img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+.download-btn{
+    background-color: rgb(40, 95, 245);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 6em;
+    
+}
+ol,ul{
+    padding: 2rem;
+}
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+   
+   .menu a{
+    display: none;
+   }
+   .menu i{
+    display:block;
+   }
+   .menu{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+  }
+  .product1-img {
+    padding: 3rem;
+    width: 100%;
+    height: 81%;
+    margin-top: 5rem;
+    overflow-x: hidden;
+}
+
+  
+}
